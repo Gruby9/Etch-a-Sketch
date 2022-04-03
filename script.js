@@ -41,6 +41,10 @@ function deleteGrid() {
 const button = document.querySelector('.btn')
 button.addEventListener('click', function() {
     deleteGrid();
-    let n = prompt('reset');
-    createGrid(n);
+    let n = prompt('Create new grid! \n Write down number of cells in row/column \n (between 2 and 30)');
+    if (n >= 2 && n <= 30) {
+        createGrid(n);
+    } else {
+        alert('Insert number between 2 and 30')
+    };
 });

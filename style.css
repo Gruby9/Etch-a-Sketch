@@ -10,5 +10,10 @@ body {
     display: grid;
 }
 
+.btn {
+    width: 100px;
+    height: 70px;
+}
+
 grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(10, 1fr);
